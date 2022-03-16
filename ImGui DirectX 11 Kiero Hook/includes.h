@@ -10,6 +10,7 @@
 #include <string>
 #include <intrin.h>
 #include <vector>
+#include <filesystem>
 
 typedef HRESULT(__stdcall* Present) (IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags);
 typedef LRESULT(CALLBACK* WNDPROC)(HWND, UINT, WPARAM, LPARAM);

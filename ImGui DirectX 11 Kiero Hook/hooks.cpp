@@ -12,18 +12,17 @@ typedef unsigned __int64 _QWORD;
 __int64 __fastcall hkGetOp(__int64 state)
 {
 
-	if (!hooks.this_state)
-		hooks.this_state = (lua_state*)state;
-	
-	std::cout << "[scrapware] Lua State Obtained: " << std::hex << state << "\n";
-
-	if (hooks.this_state)
+	if (hooks.need_new_state)
 	{
 
-		MH_DisableHook((LPVOID)(lua_baseaddr + lua_offsets.gettop));
-		hooks.this_state = hooks.create_new_state(); // makes our own state to do stuff with
+		hooks.this_state = (lua_state*)state;
+		hooks.this_state = hooks.create_new_state();
 
-	}
+		hooks.need_new_state = false;
+
+
+	} // we need to get a new lua state, either because we don't have one currently or the user decided we needed a new one
+
 
 	return (__int64)(*(_QWORD*)(state + 40) - *(_QWORD*)(state + 32)) >> 3;
 
@@ -32,10 +31,7 @@ __int64 __fastcall hkGetOp(__int64 state)
 bool CHooks::setup_hooks()
 {
 
-	if (MH_CreateHook((LPVOID)(lua_baseaddr + lua_offsets.gettop), &hkGetOp, NULL) != MH_OK)
-		return false;
-
-	if (MH_EnableHook((LPVOID)(lua_baseaddr + lua_offsets.gettop)) != MH_OK)
+	if (MH_CreateHook((LPVOID)(lua_baseaddr + lua_offsets.gettop), &hkGetOp, NULL) != MH_OK || MH_EnableHook((LPVOID)(lua_baseaddr + lua_offsets.gettop)) != MH_OK)
 		return false;
 
 	std::cout << "[scrapware] Hooked lua_gettop\n";
@@ -51,7 +47,7 @@ lua_state* CHooks::create_new_state()
 
 	if (!this->this_state)
 	{
-		std::cout << "[scrapware] lua_state_ptr was null\n";
+		std::cout << "[scrapware] this->this_state was null\n";
 		return nullptr;
 	}
 
@@ -62,15 +58,45 @@ lua_state* CHooks::create_new_state()
 
 }
 
+bool CHooks::verify_lua_state(lua_state* state)
+{
+
+	if (!state)
+		return false;
+
+	int ret = ((_luaStatus)(lua_baseaddr + lua_offsets.status))(state);
+
+	std::cout << "[scrapware] ret: " << ret << "\n";
+
+	if (ret != 0)
+		return false;
+
+	return true;
+
+}
+
 int CHooks::run_string(const char* string)
 {
 
-	if (!this->this_state)
+	if (!this->this_state || !this->verify_lua_state(this->this_state))
 		return -1;
 
 	int load_string_ret = ((_luaL_loadstring)(lua_baseaddr + lua_offsets.loadstring))(this->this_state, string);
 	int pcall_ret = ((_lua_pcall)(lua_baseaddr + lua_offsets.pcall))(this->this_state, 0, -1, 0);
 
 	return load_string_ret;
+
+}
+
+int CHooks::run_file(const char* filepath)
+{
+
+	if (!this->this_state || !this->verify_lua_state(this->this_state))
+		return -1;
+
+	int load_file_ret = ((_luaL_loadfilex)(lua_baseaddr + lua_offsets.loadfilex))(this->this_state, filepath, NULL);
+	int pcall_ret = ((_lua_pcall)(lua_baseaddr + lua_offsets.pcall))(this->this_state, 0, -1, 0);
+
+	return load_file_ret;
 
 }

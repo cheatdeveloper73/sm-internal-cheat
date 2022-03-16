@@ -6,8 +6,7 @@ class CUtils
 public:
 
 	void unloadcheat();
-
-	uintptr_t lua_base;
+	void refresh_lua_scripts();
 
 };
 

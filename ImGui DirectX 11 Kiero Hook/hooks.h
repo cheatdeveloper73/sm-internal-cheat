@@ -8,8 +8,8 @@ typedef int(*_luaL_loadfilex)(lua_state* L, const char* filename, const char* mo
 typedef int(*_lua_pcall)(lua_state* L, int nargs, int nresults, int errfunc);
 
 typedef lua_state* (__fastcall* lua_newthread)(lua_state*);
-typedef void(__cdecl* pushinteger)(lua_state*, int);
-typedef int(__cdecl* tointeger)(lua_state*, int);
+typedef void(__cdecl* lua_pushinteger)(lua_state*, int);
+typedef int(__cdecl* lua_tointeger)(lua_state*, int);
 typedef int(__cdecl* _luaStatus)(lua_state*);
 typedef int(__cdecl* _luaL_loadstring)(lua_state*, const char*);
 
@@ -32,10 +32,13 @@ class CHooks
 public:
 
 	lua_state* this_state = nullptr;
+	bool need_new_state = true;
 
 	bool setup_hooks();
 	lua_state* create_new_state();
 	int run_string(const char* string);
+	int run_file(const char* filepath);
+	bool verify_lua_state(lua_state* state);
 
 };
 

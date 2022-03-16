@@ -12,12 +12,14 @@ ID3D11Device* pDevice = NULL;
 
 void InitImGui()
 {
+
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO();
 	io.ConfigFlags = ImGuiConfigFlags_NoMouseCursorChange;
 	ImGui_ImplWin32_Init(window);
 	ImGui_ImplDX11_Init(pDevice, globals.pContext);
 	std::cout << "[scrapware] ImGui Initialized\n";
+
 }
 
 LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
@@ -59,6 +61,16 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 
 }
 
+void SetupFolders()
+{
+
+	CreateDirectoryA("C:\\scrapware\\", NULL);
+	CreateDirectoryA("C:\\scrapware\\lua\\", NULL);
+
+	std::cout << "[scrapware] Setup directories\n";
+
+}
+
 DWORD WINAPI MainThread(LPVOID lpReserved)
 {
 
@@ -77,6 +89,9 @@ DWORD WINAPI MainThread(LPVOID lpReserved)
 
 	else
 		std::cout << "[scrapware] Setup lua hooks\n";
+
+	SetupFolders();
+	utils.refresh_lua_scripts();
 
 	std::cout << "[scrapware] Finished Setup\n";
 
