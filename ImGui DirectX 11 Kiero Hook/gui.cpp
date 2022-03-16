@@ -98,6 +98,13 @@ void CGui::render()
 
 		}
 
+		ImGui::SameLine();
+
+		if (ImGui::Button("open lua folder"))
+		{
+			ShellExecute(NULL, "open", "C:\\scrapware\\lua\\", NULL, NULL, SW_SHOWNORMAL);
+		}
+
 		ImGui::End();
 
 	}
