@@ -15,7 +15,12 @@ void InitImGui()
 
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO();
-	io.ConfigFlags = ImGuiConfigFlags_NoMouseCursorChange;
+
+	io.IniFilename = nullptr;
+	io.LogFilename = nullptr;
+
+	ImGui::StyleColorsDark();
+
 	ImGui_ImplWin32_Init(window);
 	ImGui_ImplDX11_Init(pDevice, globals.pContext);
 	std::cout << "[scrapware] ImGui Initialized\n";
@@ -67,6 +72,24 @@ void SetupFolders()
 	CreateDirectoryA("C:\\scrapware\\", NULL);
 	CreateDirectoryA("C:\\scrapware\\lua\\", NULL);
 
+	HANDLE hFile = CreateFileA(
+		"C:\\scrapware\\lua\\runme.lua",     // Filename
+		GENERIC_WRITE,          // Desired access
+		FILE_SHARE_READ,        // Share mode
+		NULL,                   // Security attributes
+		CREATE_NEW,             // Creates a new file, only if it doesn't already exist
+		FILE_ATTRIBUTE_NORMAL,  // Flags and attributes
+		NULL);
+
+	std::string strText = "sm.gui.chatMessage(\"Welcome to scrapware!\")"; // For C use LPSTR (char*) or LPWSTR (wchar_t*)
+	DWORD bytesWritten;
+	WriteFile(
+		hFile,            // Handle to the file
+		strText.c_str(),  // Buffer to write
+		strText.size(),   // Buffer size
+		&bytesWritten,    // Bytes written
+		nullptr);
+
 	std::cout << "[scrapware] Setup directories\n";
 
 }
@@ -82,16 +105,17 @@ DWORD WINAPI MainThread(LPVOID lpReserved)
 		std::cout << "[scrapware] Setup D3D11 Hook\n";
 	}
 
-	std::cout << "[scrapware] Hooking lua functions\n";
-
-	if (!hooks.setup_hooks())
-		std::cout << "[scrapware] Failed to hook lua functions\n";
-
-	else
-		std::cout << "[scrapware] Setup lua hooks\n";
-
 	SetupFolders();
 	utils.refresh_lua_scripts();
+
+	std::cout << "[scrapware] Initializing steam api\n";
+
+	SteamAPI_Init();
+	globals.player_name = SteamFriends()->GetPersonaName();
+
+	std::cout << "[scrapware] Initialized steam api\n";
+
+	std::cout << "[scrapware] Hello " << globals.player_name << "\n";
 
 	std::cout << "[scrapware] Finished Setup\n";
 
@@ -104,12 +128,17 @@ BOOL WINAPI DllMain(HMODULE hMod, DWORD dwReason, LPVOID lpReserved)
 	switch (dwReason)
 	{
 	case DLL_PROCESS_ATTACH:
+
+		freopen("CONOUT$", "w", stdout);
+		SetConsoleTitleA("scrapware - owns you and all");
+		printf("SEXXXXX");
 		std::cout << "[scrapware] Entered startup routine\n";
 		DisableThreadLibraryCalls(hMod);
 		globals.cheat_module = hMod;
 		CreateThread(nullptr, 0, MainThread, hMod, 0, nullptr);
 		std::cout << "[scrapware] Finished startup routine\n";
 		break;
+
 	}
 	return TRUE;
 }

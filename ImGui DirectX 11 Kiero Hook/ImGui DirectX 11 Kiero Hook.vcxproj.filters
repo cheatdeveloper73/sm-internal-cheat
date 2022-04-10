@@ -145,10 +145,700 @@
     <ClInclude Include="hooks.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="game-sdk\include\Lua\lauxlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Lua\lua.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Lua\lua.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Lua\luaconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Lua\lualib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ActionController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Align.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Any.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_BackwardCompatibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_BiIndexBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Bitwise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Canvas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ChildSkinInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ClipboardManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Colour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ComboBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_CommonStateInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ConsoleLogListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ControllerEdgeHide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ControllerFadeAlpha.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ControllerItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ControllerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ControllerPosition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ControllerRepeatClick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_CoordConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DataFileStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DataManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DataMemoryStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DataStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DataStreamHolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DDContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DDItemInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DeprecatedTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DeprecatedWidgets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Diagnostic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DynLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_DynLibManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_EditBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_EditText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Enumerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_EventPair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_FactoryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_FileLogListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_FlowDirection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_FontData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_FontManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_GenericFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_GeometryUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IBItemInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ICroppedRectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IDataStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IItemContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ILayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ILayerItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ILayerNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ILogFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ILogListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ImageBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ImageInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_InputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IRenderTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ISerializable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IStateInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ISubWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ISubWidgetRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ISubWidgetText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ItemBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ITexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IUnlinkWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_IVertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_KeyCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LanguageManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LayerItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LayerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LayerNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LayoutData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LayoutManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LevelLogFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ListBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LogLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LogManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LogSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_LogStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MainSkin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MaskPickInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MenuBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MenuControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MenuItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MenuItemType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MouseButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MultiListBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_MultiListItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_OverlappedLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_PluginManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_PointerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_PolygonalSkin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_PopupMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Precompiled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Prerequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ProgressBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_RenderFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_RenderItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_RenderManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_RenderTargetInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResizingPolicy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceImageSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceImageSetData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceImageSetPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceLayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceManualFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceManualPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceSkin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ResourceTrueTypeFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_RotatingSkin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_RTTI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ScrollBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ScrollView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ScrollViewBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SharedLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SharedLayerNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SimpleText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SkinItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SkinManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_StringUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SubSkin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SubWidgetBinding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SubWidgetInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_SubWidgetManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TabControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TabItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TCoord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TextBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TextChangeHistory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TextIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TextureUtility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TextView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TextViewData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TileRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_ToolTipManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_TSize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_UString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_VertexData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_WidgetDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_WidgetInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_WidgetManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_WidgetStyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_WidgetToolTip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_WidgetTranslate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_WidgetUserData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_WindowsClipboardHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\MyGUI\MyGUI_XmlDocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\SM\ChatGui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\SM\Contraption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\SM\GameInstance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\SM\InGameGuiManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\SM\LuaManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\SM\LuaVM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\SM\PlayState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\SM\SM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamapplist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamapps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamappticket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamclient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamcontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamfriends.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamgamecoordinator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamgameserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamgameserverstats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamhtmlsurface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamhttp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteaminput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteaminventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteammasterserverupdater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteammatchmaking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteammusic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteammusicremote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\ISteamNetworking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamnetworkingsockets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamnetworkingutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamparentalsettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamps3overlayrenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamremoteplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamremotestorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamscreenshots.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamugc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\ISteamUser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamuserstats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\isteamvideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\matchmakingtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steam_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steam_api_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steam_api_flat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steam_api_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steam_gameserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steamclientpublic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steamdatagram_tickets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steamencryptedappticket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steamhttpenums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steamnetworkingtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steamps3params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steamtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\Steam\steamuniverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game-sdk\include\sdk.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="kiero\minhook\dll_resources\MinHook.def">
       <Filter>kiero</Filter>
     </None>
+    <None Include="game-sdk\lib\lua\lua51.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="game-sdk\lib\lua\lua51.lib" />
+    <Library Include="game-sdk\lib\mygui\MyGUIEngine.lib" />
+    <Library Include="game-sdk\lib\steam\steam_api64.lib" />
   </ItemGroup>
 </Project>

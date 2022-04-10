@@ -632,7 +632,10 @@ bool ImGui::ButtonEx(const char* label, const ImVec2& size_arg, ImGuiButtonFlags
     const ImU32 col = GetColorU32((held && hovered) ? ImGuiCol_ButtonActive : hovered ? ImGuiCol_ButtonHovered : ImGuiCol_Button);
     RenderNavHighlight(bb, id);
     RenderFrame(bb.Min, bb.Max, col, true, style.FrameRounding);
+    ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.06f, 0.06f, 0.06f, 0.95f));
     RenderTextClipped(bb.Min + style.FramePadding, bb.Max - style.FramePadding, label, NULL, &label_size, style.ButtonTextAlign, &bb);
+    ImGui::PopStyleColor();
+    
 
     // Automatically close popups
     //if (pressed && !(flags & ImGuiButtonFlags_DontClosePopups) && (window->Flags & ImGuiWindowFlags_Popup))
@@ -640,6 +643,7 @@ bool ImGui::ButtonEx(const char* label, const ImVec2& size_arg, ImGuiButtonFlags
 
     IMGUI_TEST_ENGINE_ITEM_INFO(id, label, window->DC.LastItemStatusFlags);
     return pressed;
+
 }
 
 bool ImGui::Button(const char* label, const ImVec2& size_arg)
@@ -1001,17 +1005,25 @@ bool ImGui::Checkbox(const char* label, bool* v)
     const ImRect check_bb(pos, pos + ImVec2(square_sz, square_sz));
     RenderNavHighlight(total_bb, id);
     RenderFrame(check_bb.Min, check_bb.Max, GetColorU32((held && hovered) ? ImGuiCol_FrameBgActive : hovered ? ImGuiCol_FrameBgHovered : ImGuiCol_FrameBg), true, style.FrameRounding);
-    ImU32 check_col = GetColorU32(ImGuiCol_CheckMark);
+
     if (window->DC.ItemFlags & ImGuiItemFlags_MixedValue)
     {
         // Undocumented tristate/mixed/indeterminate checkbox (#2644)
+        ImU32 check_col = GetColorU32(ImGuiCol_CheckMark);
         ImVec2 pad(ImMax(1.0f, IM_FLOOR(square_sz / 3.6f)), ImMax(1.0f, IM_FLOOR(square_sz / 3.6f)));
         window->DrawList->AddRectFilled(check_bb.Min + pad, check_bb.Max - pad, check_col, style.FrameRounding);
     }
-    else if (*v)
+    else if (*v && hovered)
     {
-        const float pad = ImMax(1.0f, IM_FLOOR(square_sz / 6.0f));
-        RenderCheckMark(check_bb.Min + ImVec2(pad, pad), check_col, square_sz - pad*2.0f);
+        ImVec2 pad = ImVec2(1, 1);
+        ImU32 check_col_active = GetColorU32(ImVec4(ImGui::GetStyleColorVec4(ImGuiCol_CheckMark).x - 0.1f, ImGui::GetStyleColorVec4(ImGuiCol_CheckMark).y - 0.1f, ImGui::GetStyleColorVec4(ImGuiCol_CheckMark).z - 0.1f, ImGui::GetStyleColorVec4(ImGuiCol_CheckMark).w - 0.1f));
+        window->DrawList->AddRectFilled(check_bb.Min + pad, check_bb.Max - pad, check_col_active, style.FrameRounding);
+    }
+    else if(*v)
+    {
+        ImVec2 pad = ImVec2(1, 1);
+        ImU32 check_col = GetColorU32(ImGuiCol_CheckMark);
+        window->DrawList->AddRectFilled(check_bb.Min + pad, check_bb.Max - pad, check_col, style.FrameRounding);
     }
 
     if (g.LogEnabled)
